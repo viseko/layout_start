@@ -1,0 +1,15 @@
+// Нормализация
+@import "normalize";
+
+// Импорт основных файлов
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "globals";
+@import "layout";
+
+// Общие блоки
+// @import "blocks/name"
+
+// Общие секции
+@import "sections/section";

@@ -1,0 +1,21 @@
+// Используемая палитра
+$cl-white: #FFF;
+$cl-black: #000;
+
+// Цвета по умолчанию
+$g-bg-color: $cl-white; // фон
+$g-text-color: $cl-black; // текст
+
+// Шрифт по умолчанию
+$g-font-size: 16px;
+$g-font: Arial;
+$g-line-height: unset;
+
+// Разрешения
+$desktop-sm: 1150px;
+$tablet: 800px;
+$mobile: 425px;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

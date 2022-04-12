@@ -1,0 +1,68 @@
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__footer {
+  margin-top: auto;
+}
+
+.page__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  transition: background-color 0.5s;
+  pointer-events: none;
+
+  .bvi-active & {
+    display: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+}
+
+// Сдвиг страницы при включенном мобильном меню
+body {
+  position: relative;
+}
+
+.page,
+.mobile-menu {
+  transition: transform 0.5s;
+}
+
+@media (max-width: $tablet) {
+  ._menu-open {
+    body {
+      overflow: hidden;
+    }
+
+    .page,
+    .mobile-menu {
+      transform: translateX(-350px);
+    }
+
+    .page__overlay {
+      background-color: rgba(#000, 0.7);
+      pointer-events: all;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  ._menu-open .mobile-menu {
+    transform: translateX(-100%);
+  }
+}
+

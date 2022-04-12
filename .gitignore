@@ -1,0 +1,19 @@
+# Node Modules
+/node_modules/
+
+# Конфиденциальные файлы
+/gulp/config/keys.js
+/gulp/config/ftp.js
+
+# Файлы редактора
+.vscode
+
+# Вспомогательные файлы
+*.log*
+*.psd
+*.docx
+
+# Собранные файлы проекта
+/build/
+/*.zip
+/.publish/
