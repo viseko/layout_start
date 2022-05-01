@@ -10,7 +10,7 @@
     "build": "gulp build --build",
     "svgsprite": "gulp svgsprite",
     "zip": "gulp deployZip --build",
-    "deploy": "gulp deloyFTP --build"
+    "deploy": "gulp deployFTP --build"
   },
   "author": "Viseko23",
   "license": "ISC",

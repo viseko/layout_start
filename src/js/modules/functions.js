@@ -1,4 +1,4 @@
-// Проверка поддержки webp
+// ** ПРОВЕРКА ПОДДЕРЖКИ WEBP
 export function isWebp() {
   function testWebp(callback) {
     const webP = new Image();

@@ -1,21 +1,24 @@
-// Используемая палитра
+// ИСПОЛЬЗУЕМАЯ ПАЛИТРА
 $cl-white: #FFF;
 $cl-black: #000;
 
-// Цвета по умолчанию
-$g-bg-color: $cl-white; // фон
-$g-text-color: $cl-black; // текст
+// ФОН И ЦВЕТ ТЕКСТА
+$g-bg-color: $cl-bg;
+$g-text-color: $cl-black;
 
-// Шрифт по умолчанию
+// ШРИФТ ПО УМОЛЧАНИЮ
 $g-font-size: 16px;
-$g-font: Arial;
+$g-font: "Roboto", Arial, sans-serif;
 $g-line-height: unset;
 
-// Разрешения
-$desktop-sm: 1150px;
-$tablet: 800px;
-$mobile: 425px;
+// МАКС. ШИРИНА КОНТЕЙНЕРА
+$container-width: 1327px;
 
-// Retina
+// Разрешения
+// $desktop-sm: 1100px;
+// $tablet: 800px;
+// $mobile: 512px;
+
+// RETINA
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

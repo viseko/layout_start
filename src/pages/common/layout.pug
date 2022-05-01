@@ -18,9 +18,10 @@ html(lang="ru")
       //- Favicon
       link(rel="icon" href="favicon.svg")
       link(rel="apple-touch-icon" href="apple-touch-icon.png")
+      //- Manifest
+      link(rel="manifest", href="manifest.json")
   body
     .page
-      #js-page-overlay.page__overlay
       block header
         include header
       block content

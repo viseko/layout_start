@@ -39,13 +39,7 @@ body {
   font-family: $g-font;
   font-size: $g-font-size;
   line-height: $g-line-height;
-
   background-color: $g-bg-color;
-
-  &._menu-show,
-  &._catalog-show {
-    overflow: hidden;
-  }
 }
 
 img {
@@ -74,4 +68,8 @@ a {
 figure {
   margin: 0;
   padding: 0;
+}
+
+p {
+  margin: 0;
 }

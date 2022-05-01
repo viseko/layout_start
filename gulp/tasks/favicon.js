@@ -18,6 +18,7 @@ export const favicon = (cb) => {
       src: "google-touch-icon.png",
       sizes: "512x512",
     }],
+    start_url: "http://localhost:3000", // заменить для прод-версии
     background_color: "#ffffff",
     theme_color: "#ffffff",
     display: "fullscreen",

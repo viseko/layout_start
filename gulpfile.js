@@ -42,7 +42,7 @@ function watcher() {
 }
 
 // Основные задачи
-const mainTasks = gulp.parallel(copy, html, scss, js, images, svgsprite, favicon);
+const mainTasks = gulp.series(gulp.parallel(copy, html, scss, js, images, svgsprite), favicon); // - почему-то манифест в параллели не генерится
 
 // Последовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontStyle, cleanFonts);
@@ -59,4 +59,4 @@ const deployGH = gulp.series(reset, mainTasks, ghPages);
 gulp.task("default", dev);
 
 // Экспорт тасков
-export {svgsprite, dev, build, deployZip, deployFTP, deployGH, prepare};
+export {favicon, svgsprite, dev, build, deployZip, deployFTP, deployGH, prepare};

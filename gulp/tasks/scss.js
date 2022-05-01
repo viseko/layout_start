@@ -27,13 +27,10 @@ export const scss = () => {
       )
     )
     .pipe(
-      app.plugins.if(
-        app.isBuild,
-        webpCss({
-          webpClass: ".webp",
-          noWebpClass: ".no-webp",
-        })
-      )
+      webpCss({
+        webpClass: ".webp",
+        noWebpClass: ".no-webp",
+      })
     )
     .pipe(
       app.plugins.if(

@@ -6,7 +6,9 @@ export const images = () => {
   return app.gulp.src(`${app.path.src.images}**/*.{jpg,jpeg,png,gif,webp,svg,ico}`)
     // Делаем webp-шки
     .pipe(app.plugins.newer(app.path.build.images))
-    .pipe(webp())
+    .pipe(webp({
+      quality: 100
+    }))
     .pipe(app.gulp.dest(app.path.build.images))
 
     // Переносим картинки
